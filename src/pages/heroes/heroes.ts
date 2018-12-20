@@ -22,9 +22,9 @@ export class HeroesPage {
 
     }
 
-    onLoadHero(name: string) {
+    onLoadHero(i: number) {
 
-        this.navCtrl.push(SingleHeroPage, {heroName: name})
+        this.navCtrl.push(SingleHeroPage, { index:i })
 
     }
 }
